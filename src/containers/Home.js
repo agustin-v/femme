@@ -3,6 +3,7 @@ import gql from 'graphql-tag'
 import { Query } from 'react-apollo'
 
 import PostPlaceholder from '../components/placeholder/PostPlaceholder'
+import PostPreview from '../components/PostPreview/PostPreview'
 
 const Home = () => {
     return(
@@ -15,9 +16,7 @@ const Home = () => {
                     return (
                         <div>
                             {data.allPosts.map(post => (
-                                <div key={post.id}>
-                                    {post.post}
-                                </div>
+                                < PostPreview key={post.id} post={post.post}/>
                             ))}
                         </div> 
                     )
