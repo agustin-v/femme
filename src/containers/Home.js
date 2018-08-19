@@ -2,7 +2,7 @@ import React from 'react'
 import gql from 'graphql-tag'
 import { Query } from 'react-apollo'
 
-import PostPlaceholder from '../components/placeholder/postPlaceholder'
+import PostPlaceholder from '../components/placeholder/PostPlaceholder'
 
 const Home = () => {
     return(
