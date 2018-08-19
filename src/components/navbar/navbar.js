@@ -6,7 +6,7 @@ const navbar = () => {
         <nav className="navbar navbar-light bg-light">
             <div className='container'>
                 <a className="navbar-brand">
-                    <img src={Book} alt="" />
+                    <img src={Book} alt="logo" style={{width: '1.5em'}}/>
                 </a>
             </div>
         </nav>
