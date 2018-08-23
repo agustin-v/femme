@@ -28,10 +28,11 @@ const Home = () => {
 
 export const FETCH_POSTS = gql`
     {
-        allPosts {
+        allPosts ( orderBy: createdAt_DESC ) {
             post,
             id,
-            title
+            title,
+            createdAt
         }
     }
 `

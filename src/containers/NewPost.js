@@ -22,14 +22,16 @@ const NewPost = () => {
             }}
           >
             <input
-              ref={node => {
-                title = node;
-              }}
+                ref={node => {
+                    title = node;
+                }}
+                placeholder='Título'
             />
             <input
-              ref={node => {
-                post = node;
-              }}
+                ref={node => {
+                    post = node;
+                }}
+                placeholder='Post'
             />
             <button type="submit">Add post</button>
           </form>
