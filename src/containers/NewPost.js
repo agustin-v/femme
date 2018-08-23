@@ -2,8 +2,7 @@ import React from 'react'
 import gql from 'graphql-tag'
 import { Mutation } from 'react-apollo'
 
-const NewPost = () => {
-
+const NewPost = ({history}) => {
     let title ;
     let post ;
 
@@ -19,6 +18,7 @@ const NewPost = () => {
               createPost({ variables: { title: title.value, post: post.value } });
               title.value = ''
               post.value = ''
+              history.push('/')
             }}
           >
             <input
