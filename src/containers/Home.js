@@ -16,7 +16,7 @@ const Home = () => {
                     return (
                         <div>
                             {data.allPosts.map(post => (
-                                < PostPreview key={post.id} post={post.post}/>
+                                < PostPreview key={post.id} post={post.post} title={post.title}/>
                             ))}
                         </div> 
                     )
@@ -26,12 +26,12 @@ const Home = () => {
     )
 }
 
-const FETCH_POSTS = gql`
+export const FETCH_POSTS = gql`
     {
         allPosts {
             post,
             id,
-            createdAt
+            title
         }
     }
 `
